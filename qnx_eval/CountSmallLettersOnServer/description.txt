@@ -1,0 +1,11 @@
+Proszê napisaæ proces klienta i serwera wykonuj¹ce poni¿sze zadania. Klient przesy³a do serwera  komunikaty zawieraj¹ce wprowadzany z konsoli tekst. Komunikat od klienta jest w postaci podanej struktury:
+
+typedef struct  {
+   int  typ;        // typ komunikatu
+   int  from;       // nr procesu który wys³a³ komunikat
+   int  ile;        // ile by³o malych liter
+   char text[SIZE]; // tekst komunikatu
+ } mss_t;
+
+
+Serwer odbiera komunikaty wysy³ane przez klientów i odsy³a napisy otrzymane w polu text ale zamienia ma³e litery na du¿e. Procesy klienta i serwera uruchamiane s¹ niezale¿nie z linii poleceñ. 

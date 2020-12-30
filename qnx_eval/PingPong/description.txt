@@ -1,0 +1,1 @@
+Proszê zaimplementowaæ "ping - ponga" miêdzy dwoma procesami, wykorzystuj¹cego impulsy jako pi³eczkê. Ka¿dy z procesów tworzy swój kana³ i po³¹czenie do kana³u "przeciwnika". W strukturze impulsu ma byæ przekazywana informacja o numerze "uderzenia".
