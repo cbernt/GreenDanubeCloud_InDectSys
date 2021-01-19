@@ -11,19 +11,16 @@ This guide explains the major software contribution developed during the project
 2. [Introduction](#introduction)
 3. [Concepts](#concepts)
 
+## Requirements
+
+<h2 align="center">Requirements</h2>
+
+webpack is a bundler for modules. The main purpose is to bundle JavaScript
+files for usage in a browser, yet it is also capable of transforming, bundling,
+or packaging just about any resource or asset.
 
 
-**TL;DR**
-
-- Bundles [ES Modules](https://www.2ality.com/2014/09/es6-modules-final.html), [CommonJS](http://wiki.commonjs.org/), and [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD) modules (even combined).
-- Can create a single bundle or multiple chunks that are asynchronously loaded at runtime (to reduce initial loading time).
-- Dependencies are resolved during compilation, reducing the runtime size.
-- Loaders can preprocess files while compiling, e.g. TypeScript to JavaScript, Handlebars strings to compiled functions, images to Base64, etc.
-- Highly modular plugin system to do whatever else your application requires.
-
-### Get Started
-
-#### JSON
+### JSON
 
 |                                                                                Name                                                                                |    Status    | Install Size  | Description                             |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------: | :-----------: | :-------------------------------------- |
