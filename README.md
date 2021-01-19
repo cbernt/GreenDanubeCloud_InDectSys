@@ -3,16 +3,15 @@ Green Danube Cloud InDectSys Repo
 
 This repo contains all files which where used during the research project of Green Danube Cloud
 This guide explains the major software contribution developed during the project
+
 ## Table of Contents
 
-1. [Install](#install)
+1. [Requirements](#req)
+2. [Install](#install)
 2. [Introduction](#introduction)
 3. [Concepts](#concepts)
 
 
-webpack is a bundler for modules. The main purpose is to bundle JavaScript
-files for usage in a browser, yet it is also capable of transforming, bundling,
-or packaging just about any resource or asset.
 
 **TL;DR**
 
