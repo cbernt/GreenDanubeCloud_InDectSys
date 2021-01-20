@@ -117,8 +117,6 @@ Feature definition
 
 ## Getting started
 
-text
-
 Environment creation is demonstrated for a Windows platform but should work similarly on Linux as well.
 
 -	VirtualBox 4.0.26	
