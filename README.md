@@ -100,6 +100,8 @@ Feature definition
 
 ## Getting started
 
+text
+
 ## Install
 
 After installing the Vagrant file. As a general guide line follow the installation instructions the README of the subdirectories or contained in the relevante rar files.
