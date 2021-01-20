@@ -100,8 +100,21 @@ Starting point for the project is to install the required software packages and 
 ### JSON
 
 | Logo  | Name  | Description                             |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------: | :-----------: | :-------------------------------------- |
+| :-------------------------------------: | :----------: | :-----------: | :-------------------------------------- |
 | ![android_logo] | Android_eval | scripts containing Adroid evaulation |
+
+
+Element | Style | Beispiel | Verwendung bei
+----|------|----|--------
+Module | lowerCamelCase  | angularApp |
+Controller | funktionalität + 'Ctrl'  | adminCtrl |
+Direktiven | lowerCamelCase  | userInfo |
+Filter | lowerCamelCase | userFilter |
+Services | UpperCamelCase | User | Konstruktor
+Services | lowerCamelCase | dataFactory | sonstige
+
+
+
 
 |                                                                                Name                                                                                |    Status    | Install Size  | Description                             |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------: | :-----------: | :-------------------------------------- |
