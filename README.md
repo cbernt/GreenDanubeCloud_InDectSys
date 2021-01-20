@@ -101,5 +101,5 @@ Starting point for the project is to install the required software packages and 
 
  Logo  | Name  | Description                             
  :-------------------------------------: | :----------: | :-------------------------------------- 
- !<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Android_Eval"><img width="48" height="48" src="https://avatars1.githubusercontent.com/u/32689599?s=200&v=4"></a> | Android_eval | scripts containing Adroid evaulation | 
-!<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/CAP_Prototype"><img width="48" height="48" src="https://commons.wikimedia.org/wiki/File:Gitea_Logo.svg"></a> | CAP prototype | main repro containing most of the scripts and methods | 
+ <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Android_Eval"><img width="48" height="48" src="https://avatars1.githubusercontent.com/u/32689599?s=200&v=4"></a> | Android_eval | scripts containing Adroid evaulation | 
+<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/CAP_Prototype"><img width="48" height="48" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Gitea_Logo.svg"></a> | CAP prototype | main repro containing most of the scripts and methods | 
