@@ -8,18 +8,20 @@ This guide explains the major software contribution developed during the project
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
 
 The goals of the project are:
--Development of formal foundations
--- Formal models for internet protocols
--- Development of probabilistic methods
--- Research of parallization of different cores
--- Synthesis of formal model into HDL
--Development for the automatic detection of inturders
--- Signaturebased methods to intruder atempts
--- Anomaly based methods
--- Robust trainings methods to detect anomaly based intruders
--Test and simulation environment
--- Development to simulate different intrusion atempts
--- Automatic generation of xml structure for testing
+Development of formal foundations
+- Formal models for internet protocols
+- Development of probabilistic methods
+- Research of parallization of different cores
+- Synthesis of formal model into HDL
+
+Development for the automatic detection of inturders
+- Signaturebased methods to intruder atempts
+- Anomaly based methods
+- Robust trainings methods to detect anomaly based intruders
+
+Test and simulation environment
+- Development to simulate different intrusion atempts
+- Automatic generation of xml structure for testing
 
 ## Table of Contents
 
