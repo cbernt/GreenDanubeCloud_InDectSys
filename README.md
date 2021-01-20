@@ -69,7 +69,7 @@ Feature definition
 -	Static aka. Persistent XSS Detection and Blocking
 -	XSS Detection through
 -	Anomaly Detection
-  - XML Detection
+    - XML Detection
 	Javascript Anomaly Detection 
 	? vb script anomaly detection (unclear if required)
 ? flash
