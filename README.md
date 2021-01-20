@@ -100,7 +100,7 @@ Starting point for the project is to install the required software packages and 
 ### JSON
 
  Logo  | Name  | Description                             
- :-------------------------------------: | :----------: | :-----------: | :-------------------------------------- 
+ :-------------------------------------: | :----------: | :-------------------------------------- 
  !<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Android_Eval"><img width="48" height="48" src="https://avatars1.githubusercontent.com/u/32689599?s=200&v=4"></a> | Android_eval | scripts containing Adroid evaulation | 
 
 
