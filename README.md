@@ -68,7 +68,7 @@ Feature definition
 -	Dynamic aka. Reflected (incl. DOM) XSS Detection and Blocking
 -	Static aka. Persistent XSS Detection and Blocking
 -	XSS Detection through
--	Anomaly Detection
+--	Anomaly Detection
 	Implementation of Lampesberger XML Detection
 	Javascript Anomaly Detection 
 	? vb script anomaly detection (unclear if required)
