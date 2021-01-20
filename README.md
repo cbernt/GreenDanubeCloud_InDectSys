@@ -50,6 +50,41 @@ You might also get a test account for IXA.
 
 ## Concepts
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder1.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder1.jpg"></a>
+The above concept was the core of the project and can be used as guide line for the software in this repro.
+Requirements
+-	Protects against especially cross-site-scripting attacks (the widely spread attack form)
+-	should be available to Mobile, Desktop and Server
+-	Analysis of web traffic http / https (later)
+-	Protects company client devices from executing XSS
+-	WE WANT TO prevent XSS code (dynamic or persistent) to be executed by the browser -> this will automatically prevent downloading of external malware
+
+Feature definition
+-	Ubuntu LTS in its current version shall be used (support will cover 5 years)
+-	Squid as proxy
+-	Our solution as squid module which shall be packet according to Ubuntu packet rules 
+-	An appliance which extend existing solutions like lastline, checkpoint, etc.
+-	Alarm via E-Mail
+-	Syslog and/or Splunk integration
+-	Dynamic aka. Reflected (incl. DOM) XSS Detection and Blocking
+-	Static aka. Persistent XSS Detection and Blocking
+-	XSS Detection through
+-	Anomaly Detection
+	Implementation of Lampesberger XML Detection
+	Javascript Anomaly Detection 
+	? vb script anomaly detection (unclear if required)
+? flash
+	? url parameter anomaly detection
+	Website references to external urls
+	Normality has to be determined for each and every site
+o	DNS rating (block everything to and from known bad urls)
+o	Regular Expression (Signature)
+o	URL Sanitization
+o	External target script -> file download, 
+o	CSS (style) detection for hidden content (size, zero, ….)
+o	Cookie access (??? Which script accesses the cookie, may be hard the injected code is allowed to execute inside the browser’s domain sandbox)
+
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
 
 
 ### JSON
