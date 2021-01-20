@@ -102,38 +102,4 @@ Starting point for the project is to install the required software packages and 
  Logo  | Name  | Description                             
  :-------------------------------------: | :----------: | :-------------------------------------- 
  !<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Android_Eval"><img width="48" height="48" src="https://avatars1.githubusercontent.com/u/32689599?s=200&v=4"></a> | Android_eval | scripts containing Adroid evaulation | 
-
-
-Element | Style | Beispiel | Verwendung bei
-----|------|----|--------
-Module | lowerCamelCase  | angularApp |
-Controller | funktionalität + 'Ctrl'  | adminCtrl |
-Direktiven | lowerCamelCase  | userInfo |
-Filter | lowerCamelCase | userFilter |
-Services | UpperCamelCase | User | Konstruktor
-Services | lowerCamelCase | dataFactory | sonstige
-
-
-
-
-|                                                                                Name                                                                                |    Status    | Install Size  | Description                             |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------: | :-----------: | :-------------------------------------- |
-|                          | ![json-npm]  | ![json-size]  | Loads a JSON file (included by default) |
-| <a href="https://github.com/webpack-contrib/json5-loader"><img width="48" height="10.656" src="https://cdn.rawgit.com/json5/json5-logo/master/json5-logo.svg"></a> | ![json5-npm] | ![json5-size] | Loads and transpiles a JSON 5 file      |
-|             <a href="https://github.com/awnist/cson-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/coffeescript.svg"></a>              | ![cson-npm]  | ![cson-size]  | Loads and transpiles a CSON file        |
-
-
-[json-npm]: https://img.shields.io/npm/v/json-loader.svg
-[json-size]: https://packagephobia.com/badge?p=json-loader
-[json5-npm]: https://img.shields.io/npm/v/json5-loader.svg
-[json5-size]: https://packagephobia.com/badge?p=json5-loader
-[cson-npm]: https://img.shields.io/npm/v/cson-loader.svg
-[cson-size]: https://packagephobia.com/badge?p=cson-loader
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+!<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/CAP_Prototype"></a> | CAP prototype | main repro containing most of the scripts and methods | 
