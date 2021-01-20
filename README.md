@@ -99,9 +99,9 @@ Starting point for the project is to install the required software packages and 
 
 ### JSON
 
-| Logo  | Name  | Description                             |
-| :-------------------------------------: | :----------: | :-----------: | :-------------------------------------- |
-| ![android_logo] | Android_eval | scripts containing Adroid evaulation |
+ Logo  | Name  | Description                             
+ :-------------------------------------: | :----------: | :-----------: | :-------------------------------------- 
+ !<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Android_Eval"><img width="48" height="48" src="https://avatars1.githubusercontent.com/u/32689599?s=200&v=4"></a> | Android_eval | scripts containing Adroid evaulation 
 
 
 Element | Style | Beispiel | Verwendung bei
@@ -122,7 +122,7 @@ Services | lowerCamelCase | dataFactory | sonstige
 | <a href="https://github.com/webpack-contrib/json5-loader"><img width="48" height="10.656" src="https://cdn.rawgit.com/json5/json5-logo/master/json5-logo.svg"></a> | ![json5-npm] | ![json5-size] | Loads and transpiles a JSON 5 file      |
 |             <a href="https://github.com/awnist/cson-loader"><img width="48" height="48" src="https://worldvectorlogo.com/logos/coffeescript.svg"></a>              | ![cson-npm]  | ![cson-size]  | Loads and transpiles a CSON file        |
 
-[android_logo]: <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Android_Eval"><img width="48" height="48" src="https://avatars1.githubusercontent.com/u/32689599?s=200&v=4"></a>
+
 [json-npm]: https://img.shields.io/npm/v/json-loader.svg
 [json-size]: https://packagephobia.com/badge?p=json-loader
 [json5-npm]: https://img.shields.io/npm/v/json5-loader.svg
