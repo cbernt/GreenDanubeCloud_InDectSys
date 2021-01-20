@@ -27,7 +27,7 @@ Test and simulation environment
 
 1. [Requirements](#requirements)
 2. [Concepts](#concepts)
-3. [Getting_started] (#getting_started) 
+3. [Getting started] (#getting) 
 4. [Install](#install)
 5. [Content](#content)
 
@@ -98,7 +98,7 @@ Feature definition
     - CSS (style) detection for hidden content (size, zero, ….)
     - Cookie access (??? Which script accesses the cookie, may be hard the injected code is allowed to execute inside the browser’s domain sandbox)
 
-## Getting_started
+## Getting started
 
 ## Install
 
