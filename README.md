@@ -27,7 +27,7 @@ Test and simulation environment
 
 1. [Requirements](#requirements)
 2. [Concepts](#concepts)
-3. [Getting started] (#getting_started) 
+3. [Getting_started] (#getting_started) 
 4. [Install](#install)
 5. [Content](#content)
 
