@@ -10,6 +10,8 @@ Cyber attacks can be differeniated between „targeted“ and „non-targeted“
 
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder2.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder2.jpg"></a>
 
+As a consequence, classic security measures that consider interaction at network level, such as firewalls or intrusion detection systems (IDS), will be less and less able to protect clients in the future. Ensuring correct and safe interaction is ultimately the responsibility of the client or a middleware. The primary goal of the following project is therefore to prevent potential attacks from the Internet by ensuring that they are detected very soon in the attack chain. This also represents the greatest innovation in this project compared to the state of the art (see Figure 2). Today it is only possible to a very limited extent to detect attacks in a very early stadium. The following figure shows the technical placement of the developments.
+
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
 
 The detailled goals of the project are:
