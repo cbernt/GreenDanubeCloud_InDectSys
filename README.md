@@ -5,7 +5,7 @@ This repo contains all files which where used during the research project of Gre
 This guide explains the major software contribution developed during the project.
 
 
-<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"><img width="348" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
+<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
 
 The goals of the project are:
 Development of formal foundations
