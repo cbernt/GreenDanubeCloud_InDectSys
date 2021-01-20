@@ -100,6 +100,212 @@ Feature definition
 
 ## Getting_started
 
+Environment creation is demonstrated for a Windows platform but should work similarly on Linux as well.
+
+-	VirtualBox 4.0.26	
+	http://download.virtualbox.org/virtualbox/4.0.26/VirtualBox-4.0.26-95035-Win.exe
+-	Vagrant  1.7.1
+	https://releases.hashicorp.com/vagrant/1.7.1/vagrant_1.7.1.msi
+- 	Putty	
+-	> 50GB free HDD
+-	> 6GB RAM
+
+1. Install VirtualBox 
+2. Install Vagrant
+3. Clone this repository using git, tortoisegit, etc.
+
+4.  Press <kbd>Win</kbd>+<kbd>R</kbd> then enter `cmd` to open Windows Command Prompt
+5.  Input: `vagrant plugin install vagrant-disksize` and hit <kbd>enter</kbd>
+6.	Input: `cd \<path to this repo>\` to the root folder (where Vagrantfile is located)
+7.	Input: `vagrant up develop` and hit <kbd>enter</kbd>	
+	** This may take a long time to complete a couple of hours.**	
+8.	if prompted to select a Network Adapter: 
+	select the one you got the IP address from and connect to your network with (e.g. Realtek PCIe GBE Family Controller, Intel(R) Wireless-AC, ...)
+9.	Input: `vagrant provision`
+	After VM provisioning is complete (this is building the VM once and may take a long time) the VM is started automatically.	
+	*You can also verify that the VM is running by opening the VirtualBox UI, but **do not** manually change any of the VMs settings using the UI!*
+
+10.	Check the console windows for a localhost port 2222, 2200, etc.
+11. Use Putty to connect to localhost and the above port
+
+user: vagrant 
+pass: key file located in <root path>\.vagrant\machines\develop\virtualbox\private_key
+
+The key file is created after the first `vagrant up develop` command.
+To use the key file on windows with putty it must be converted first
+- download putty and putty key generator here: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+- start putty key generator
+- Menu "Conversions" -> "Import Key"
+- go to the private key location (above) and select the private_key file
+- click the "Save private key" button in the Actions section
+- accept warnings about no password specified and enter a filename e.g. private_key.ppk
+- start putty
+- host: localhost -> port: 22xx (the local port is printed by vagrant in command prompt)
+- in the "Category" tree select: Connection -> SSH -> Auth
+- in the "Authentication paramters" section click the "Browse..." button and select the private_key.ppk file
+- click "open" button
+- specify username (the default ssh user is printed by vagrant in command prompt)
+
+12. Configure Squid `$ sudo nano /etc/squid3/squid.conf`
+
+```
+# ACCESS CONTROLS OPTIONS
+# ====================
+#
+acl QUERY urlpath_regex -i cgi-bin \? \.php$ \.asp$ \.shtml$ \.cfm$ \.cfml$ \.phtml$ \.php3$ localhost
+acl all src
+acl localnet src 10.0.0.0/8
+acl localnet src 192.168.0.0/24 # LAN mreza
+# acl localhost src 127.0.0.1/32
+acl safeports port 21 70 80 210 280 443 488 563 591 631 777 901 81 3128 1025-65535
+acl sslports port 443 563 81 2087 10000
+# acl manager proto cache_object
+acl purge method PURGE
+acl connect method CONNECT
+acl ym dstdomain .messenger.yahoo.com .psq.yahoo.com
+acl ym dstdomain .us.il.yimg.com .msg.yahoo.com .pager.yahoo.com
+acl ym dstdomain .rareedge.com .ytunnelpro.com .chat.yahoo.com
+acl ym dstdomain .voice.yahoo.com
+acl ymregex url_regex yupdater.yim ymsgr myspaceim
+#
+http_access deny ym
+http_access deny ymregex
+http_access allow manager localhost
+http_access deny manager
+http_access allow purge localhost
+http_access deny purge
+http_access deny !safeports
+http_access deny CONNECT !sslports
+http_access allow localhost
+http_access allow localnet
+http_access deny all
+#
+# NETWORK OPTIONS
+# —————
+#
+http_port 3128 transparent
+#
+# OPTIONS WHICH AFFECT THE CACHE SIZE
+# ==============================
+#
+cache_mem 8 MB
+maximum_object_size_in_memory 32 KB
+memory_replacement_policy heap GDSF
+cache_replacement_policy heap LFUDA
+cache_dir aufs /home/squid/cache 10000 14 256
+maximum_object_size 128000 KB
+cache_swap_low 95
+cache_swap_high 99
+#
+# LOGFILE PATHNAMES AND CACHE DIRECTORIES
+# ==================================
+#
+access_log /var/log/squid3/access.log
+cache_log /home/squid/cache/cache.log
+#cache_log /dev/null
+cache_store_log none
+logfile_rotate 5
+log_icp_queries off
+#
+# OPTIONS FOR TUNING THE CACHE
+# ========================
+#
+cache deny QUERY
+refresh_pattern ^ftp: 1440 20% 10080 reload-into-ims
+refresh_pattern ^gopher: 1440 0% 1440
+refresh_pattern -i \.(gif|png|jp?g|ico|bmp|tiff?)$ 10080 95% 43200 override-expire override-lastmod reload-into-ims ignore-no-cache ignore-private
+refresh_pattern -i \.(rpm|cab|deb|exe|msi|msu|zip|tar|xz|bz|bz2|lzma|gz|tgz|rar|bin|7z|doc?|xls?|ppt?|pdf|nth|psd|sis)$ 10080 90% 43200 override-expire override-lastmod reload-into-ims ignore-no-cache ignore-private
+refresh_pattern -i \.(avi|iso|wav|mid|mp?|mpeg|mov|3gp|wm?|swf|flv|x-flv|axd)$ 43200 95% 432000 override-expire override-lastmod reload-into-ims ignore-no-cache ignore-private
+refresh_pattern -i \.(html|htm|css|js)$ 1440 75% 40320
+refresh_pattern -i \.index.(html|htm)$ 0 75% 10080
+refresh_pattern -i (/cgi-bin/|\?) 0 0% 0
+refresh_pattern . 1440 90% 10080
+#
+quick_abort_min 0 KB
+quick_abort_max 0 KB
+quick_abort_pct 100
+store_avg_object_size 13 KB
+#
+# HTTP OPTIONS
+# ===========
+vary_ignore_expire on
+#
+# ANONIMITY OPTIONS
+# ===============
+#
+request_header_access From deny all
+request_header_access Server deny all
+request_header_access Link deny all
+request_header_access Via deny all
+request_header_access X-Forwarded-For deny all
+#
+# TIMEOUTS
+# =======
+#
+forward_timeout 240 second
+connect_timeout 30 second
+peer_connect_timeout 5 second
+read_timeout 600 second
+request_timeout 60 second
+shutdown_lifetime 10 second
+#
+# ADMINISTRATIVE PARAMETERS
+# =====================
+#
+cache_mgr Amer
+cache_effective_user proxy
+cache_effective_group proxy
+httpd_suppress_version_string on
+visible_hostname Amer
+#
+#ftp_list_width 32
+ftp_passive on
+ftp_sanitycheck on
+#
+# DNS OPTIONS
+# ==========
+#
+dns_timeout 10 seconds
+dns_nameservers 192.168.1.1 8.8.8.8 8.8.4.4 # DNS Serveri
+#
+# MISCELLANEOUS
+# ===========
+#
+memory_pools off
+client_db off
+reload_into_ims on
+coredump_dir /cache
+pipeline_prefetch on
+offline_mode off
+#
+#Marking ZPH
+#==========
+#zph_mode tos
+#zph_local 0x04
+#zph_parent 0
+#zph_option 136
+### END CONFIGURATION ###
+```
+
+13. prepare the iptables: `$ sudo nano /etc/iptables/rules.v4`
+```
+*nat
+-A PREROUTING -i eth0 -p tcp -m tcp --dport 80 -j DNAT --to-destination 192.168.0.1:3128
+-A PREROUTING -i eth0 -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 3128
+-A POSTROUTING -s 192.168.0.0/24 -o eth1 -j MASQUERADE
+COMMIT
+```
+14. load iptables `$ sudo iptables-restore < /etc/iptables/rules.v4`
+15. `$ nano /etc/rc.local` and add the following line below the "exit 0" line
+```
+iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth1 -j MASQUERADE
+```
+16.	Restart the vm. In the Windows console window input: `vagrant halt develop` and hit <kbd>enter</kbd>
+	*this will shutdown the VM*	
+
+
+
+
 ## Install
 
 After installing the Vagrant file. As a general guide line follow the installation instructions the README of the subdirectories or contained in the relevante rar files.
