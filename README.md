@@ -2,22 +2,33 @@
 Green Danube Cloud InDectSys Repo
 
 This repo contains all files which where used during the research project of Green Danube Cloud
-This guide explains the major software contribution developed during the project
+This guide explains the major software contribution developed during the project.
+
+https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg
+
+The goals of the project are:
+Development of formal foundations
+- Formal models for internet protocols
+- Development of probabilistic methods
+- Research of parallization of different cores
+- Synthesis of formal model into HDL
+Development for the automatic detection of inturders
+- Signaturebased methods to intruder atempts
+- Anomaly based methods
+- Robust trainings methods to detect anomaly based intruders
+Test and simulation environment
+- Development to simulate different intrusion atempts
+- Automatic generation of xml structure for testing
 
 ## Table of Contents
 
-1. [Requirements](#req)
+1. [Requirements](#requirements)
 2. [Install](#install)
 2. [Introduction](#introduction)
 3. [Concepts](#concepts)
 
 ## Requirements
-
-<h2 align="center">Requirements</h2>
-
-webpack is a bundler for modules. The main purpose is to bundle JavaScript
-files for usage in a browser, yet it is also capable of transforming, bundling,
-or packaging just about any resource or asset.
+The software contained in this repro was used to evaluate different strategies to 
 
 
 ### JSON
