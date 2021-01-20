@@ -4,7 +4,8 @@ Green Danube Cloud InDectSys Repo
 This repo contains all files which where used during the research project of Green Danube Cloud
 This guide explains the major software contribution developed during the project.
 
-https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg
+
+<a href="https://github.com/webpack-contrib/json-loader"><img width="148" height="148" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
 
 The goals of the project are:
 Development of formal foundations
