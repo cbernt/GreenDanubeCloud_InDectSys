@@ -27,8 +27,9 @@ Test and simulation environment
 
 1. [Requirements](#requirements)
 2. [Concepts](#concepts)
-3. [Install](#install)
-3. [Content](#content)
+3. [Getting started] (#getting_started) 
+4. [Install](#install)
+5. [Content](#content)
 
 ## Requirements
 General requirements are:
@@ -97,9 +98,11 @@ Feature definition
     - CSS (style) detection for hidden content (size, zero, ….)
     - Cookie access (??? Which script accesses the cookie, may be hard the injected code is allowed to execute inside the browser’s domain sandbox)
 
+## Getting started
+
 ## Install
 
-As a general guide line follow the installation instructions the README of the subdirectories or contained in the relevante rar files.
+After installing the Vagrant file. As a general guide line follow the installation instructions the README of the subdirectories or contained in the relevante rar files.
 Further instructions can be found in the documentation files in the https://github.com/cbernt/GreenDanubeCloud_InDectSys/tree/master/Green%20Danube folder.
 Starting point for the project is to install the required software packages and then depending on the method which should exaimined and further developed the documentation in the mentioned folder.
 
