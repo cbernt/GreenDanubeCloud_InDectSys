@@ -76,11 +76,11 @@ Feature definition
          - Website references to external urls
          - Normality has to be determined for each and every site
     - DNS rating (block everything to and from known bad urls)
-o	Regular Expression (Signature)
-o	URL Sanitization
-o	External target script -> file download, 
-o	CSS (style) detection for hidden content (size, zero, ….)
-o	Cookie access (??? Which script accesses the cookie, may be hard the injected code is allowed to execute inside the browser’s domain sandbox)
+    - Regular Expression (Signature)
+    - URL Sanitization
+    - External target script -> file download, 
+    - CSS (style) detection for hidden content (size, zero, ….)
+    - Cookie access (??? Which script accesses the cookie, may be hard the injected code is allowed to execute inside the browser’s domain sandbox)
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
