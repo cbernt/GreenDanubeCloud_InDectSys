@@ -27,11 +27,29 @@ Test and simulation environment
 
 1. [Requirements](#requirements)
 2. [Install](#install)
-2. [Introduction](#introduction)
 3. [Concepts](#concepts)
 
 ## Requirements
-The software contained in this repro was used to evaluate different strategies to 
+General requirements are:
+
+Operation systems:
+You need to have different OS running either native on a comptuer or in virtual containers:
+- Windows 8
+- Ubuntu
+- MacOS
+- Android
+- QNX
+
+Attack simulator:
+Some parts of the software require different software packages installed to simulate attacks, be careful using them
+- KaliLinux
+- BlackTrack Linux
+- BlackBox Linux
+- Cybork Linux
+You might also get a test account for IXA.
+
+## Concepts
+<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder1.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder1.jpg"></a>
 
 
 ### JSON
