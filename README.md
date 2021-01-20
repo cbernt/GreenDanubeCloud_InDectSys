@@ -85,7 +85,7 @@ o	Cookie access (??? Which script accesses the cookie, may be hard the injected 
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
-
+[![Downloads Stats][npm-downloads]][npm-url]
 
 ### JSON
 
