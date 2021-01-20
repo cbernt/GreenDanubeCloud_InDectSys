@@ -14,6 +14,16 @@ As a consequence, classic security measures that consider interaction at network
 
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
 
+The aim of the project is to develop methods for an Intrusion Detection System - IDS" which expands the technical capability of todas IDS available on the market in two directions. On the one hand, as already mentioned above, a potential attack should be detected at a very early stage, and on the other hand, the system should have techniques that have self-learning mechanisms.
+
+Methods for an intrusion detection system (IDS) are to be expanded so that the following general goals can be achieved:
+
+- Combination of signature and anomaly-based methods for the detection of attacks in network traffic
+- Low latency
+- High detection rates of attacks
+- Low number of false alarms
+- Use in cloud applications
+
 The detailled goals of the project are:
 Development of formal foundations
 - Formal models for internet protocols
