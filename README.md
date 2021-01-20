@@ -4,10 +4,27 @@ Green Danube Cloud InDectSys Repo
 This repo contains all files which where used during the research project of Green Danube Cloud
 This guide explains the major software contribution developed during the project.
 
+## Overview
+
+Cyber attacks can be differeniated between „targeted“ and „non-targeted“ threats. Targeted threats are threats through which an attacker gains targeted access to a previously defined system. This means that the goal is known. These attacks have been fended off by hardware firewalls, intrusion detection systems and anti-virus software since the 1980s. However, the attack vector has changed in recent years, not least due to the use of sophisticated security systems on the perimeter. Today systems are attacked arbitrarily. Today, as a rule, unknown software vulnerabilities are used that penetrate the weakest link in the chain. For example, a web browser on the client itself. This vulnerability prepares a system through what is known as an exploit, and then subsequently installs a virus. The malware makes it possible to fully control the infected device. And now that these devices are more and more mobile, the malware is unwittingly active behind heavily secured systems such as high-end firewalls and intrusion detection systems. However, who the client is remains undefined. (non-targetet). Once the infection has taken place, a camouflaged connection to the outside is established via encrypted channels and the person responsible is notified of the success. Today this process is even carried out largely automatically and has even been commercialized in the meantime. Access to infected systems can then be acquired in relevant forums and used specifically for misuse.  
+
+<a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder2.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder2.jpg"></a>
+
+As a consequence, classic security measures that consider interaction at network level, such as firewalls or intrusion detection systems (IDS), will be less and less able to protect clients in the future. Ensuring correct and safe interaction is ultimately the responsibility of the client or a middleware. The primary goal of the following project is therefore to prevent potential attacks from the Internet by ensuring that they are detected very soon in the attack chain. This also represents the greatest innovation in this project compared to the state of the art (see Figure 2). Today it is only possible to a very limited extent to detect attacks in a very early stadium. The following figure shows the technical placement of the developments.
 
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"><img width="448" height="348" src="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/Bilder.jpg"></a>
 
-The goals of the project are:
+The aim of the project is to develop methods for an Intrusion Detection System - IDS" which expands the technical capability of todas IDS available on the market in two directions. On the one hand, as already mentioned above, a potential attack should be detected at a very early stage, and on the other hand, the system should have techniques that have self-learning mechanisms.
+
+Methods for an intrusion detection system (IDS) are to be expanded so that the following general goals can be achieved:
+
+- Combination of signature and anomaly-based methods for the detection of attacks in network traffic
+- Low latency
+- High detection rates of attacks
+- Low number of false alarms
+- Use in cloud applications
+
+The detailled goals of the project are:
 Development of formal foundations
 - Formal models for internet protocols
 - Development of probabilistic methods
@@ -27,7 +44,7 @@ Test and simulation environment
 
 1. [Requirements](#requirements)
 2. [Concepts](#concepts)
-3. [Getting_started] (#getting_started) 
+3. [Getting started] (#getting) 
 4. [Install](#install)
 5. [Content](#content)
 
@@ -96,9 +113,11 @@ Feature definition
     - URL Sanitization
     - External target script -> file download, 
     - CSS (style) detection for hidden content (size, zero, ….)
-    - Cookie access (??? Which script accesses the cookie, may be hard the injected code is allowed to execute inside the browser’s domain sandbox)
+    - Cookie access
 
-## Getting_started
+## Getting started
+
+text
 
 Environment creation is demonstrated for a Windows platform but should work similarly on Linux as well.
 
@@ -339,3 +358,6 @@ Starting point for the project is to install the required software packages and 
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/squid_matlab.rar"><img width="48" height="48" src="https://veesp.com/assets/blog/how-to-setup-squid-on-ubuntu.png"></a> | squid_matlab.rar | Matlab scripts to connect analyze data traffic using squid | see rar file and docu |
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/virustotal.rar"><img width="48" height="48" src="https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/vxwo4yr27optg1jldgjf"></a> | virustotal.rar | scripts containing Virustotal sandbox scripts and modifications | see rar file and docu |
 <a href="https://github.com/cbernt/GreenDanubeCloud_InDectSys/blob/master/win_eval.rar"><img width="48" height="48" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Unofficial_Windows_logo_variant_-_2002%E2%80%932012_%28Multicolored%29.svg"></a> | win_eval.rar | scripts containing Windows evaulation methods and modifications | see rar file and docu |
+
+## Support
+Feel free to contact us
