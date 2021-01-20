@@ -70,13 +70,12 @@ Feature definition
 -	XSS Detection through
 -	Anomaly Detection
     - XML Detection
-	Javascript Anomaly Detection 
-	? vb script anomaly detection (unclear if required)
-? flash
-	? url parameter anomaly detection
-	Website references to external urls
-	Normality has to be determined for each and every site
-o	DNS rating (block everything to and from known bad urls)
+         - Javascript Anomaly Detection 
+         - vb script anomaly detection 
+         - url parameter anomaly detection
+         - Website references to external urls
+         - Normality has to be determined for each and every site
+    - DNS rating (block everything to and from known bad urls)
 o	Regular Expression (Signature)
 o	URL Sanitization
 o	External target script -> file download, 
